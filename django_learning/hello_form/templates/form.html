@@ -1,0 +1,11 @@
+{% if username %}
+<h1>{{username}}</h1>
+{% else %}
+<h1>Entrez votre nom dans le formulaire</h1>
+{% endif %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="OK">
+</form>
