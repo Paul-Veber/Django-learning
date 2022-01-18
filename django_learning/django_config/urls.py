@@ -20,5 +20,6 @@ urlpatterns = [
     path('hello/', include('hello_world.urls')),
     path('hellourl/', include('hello_world_url.urls')),
     path('helloform/', include('hello_form.urls')),
+    path('guestbook/', include('guestbook.urls')),
     path('admin/', admin.site.urls),
 ]
